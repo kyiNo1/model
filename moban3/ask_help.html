@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/ask_help.css">
+    <script src="js/jquery-1.4.2.min.js"></script>
+    <script src="js/advert.js"></script>
+    <title>咨询问政平台</title>
+</head>
+<body>
+    <div class="main header">
+        <div class="h-search">
+            <input id="search" type="text" placeholder="标题关键字">
+            <i class="h-search-icon"></i>
+        </div>
+    </div>
+    <!--导航栏 开始-->
+    <div class="main">
+        <div class=" m-nav">
+            <p>现在位置:
+                <a href="#">首页</a>->
+                <a href="#">网络问政平台</a>->
+                <a href="#">咨询求助</a>
+            </p>
+        </div>
+    </div>
+    <!--咨询求助 到其它联系方式   开始-->
+    <div class="main g-content">
+         <div class="m-title">咨询求助</div>
+         <div class="m-call"><a href="#"><span>我要电话咨询</span></a></div>
+         <div class="m-form-box">
+             <div class="tips">
+                <p class="tips-title"> 温馨提示：</p>
+                <p><span>1、</span>欢迎您登录“广东环境保护”网站咨询有关环保业务问题，我们将及时对您提出的问题做出回复。</p>
+                <p><span>2、</span>请您认真填写带*的必填栏目，点击 “隐藏”只回复来信人，点击“公开”信息将对所有用户公开。</span></p>
+                <p><span>3、</span>为方便和您联系、核实信息，请留下真实的姓名、联系电话等信息，这些个人信息不对外公开。</span></p>
+                <p><span>4、</span>如您需要对广东环保工作建言献策或投诉举报环境污染，请进入（<a href="#">建言献策</a>），（<a href="#">投诉举报）</a>页面</p>
+             </div>
+             <!--表单   开始-->
+            <form action="" method="post" class="form-content" id="myForm">
+                <p class="fc-nt-name">
+                    <span>网名：</span>
+                    <input type="text" name="netName" value="环保网友">
+                </p>
+                <p class="fc-subject">
+                    <span>咨询主题：</span>
+                    <input type="text" name="subject">
+                    <span class="star">*</span>
+                </p>
+                <p class="fc-helpType">
+                    <span>咨询类型：</span>
+                    <select name="helpType">
+                            <option value=""></option>
+                        <option value="水环境管理类">水环境管理类</option>
+                        <option value="建设项目类">建设项目类</option>
+                        <option value="监督管理类">监督管理类</option>
+                        <option value="核安全与放射源类">核安全与放射源类</option>
+                        <option value="电磁辐射类">电磁辐射类</option>
+                        <option value="人事类">人事类</option>
+                        <option value="行政监察类">行政监察类</option>
+                        <option value="监测管理类">监测管理类</option>
+                        <option value="环境科学学会">环境科学学会</option>
+                        <option value="辐射监测类">辐射监测类</option>
+                        <option value="环境教育类">环境教育类</option>
+                        <option value="政策法规类">政策法规类</option>
+                        <option value="环境宣传类">环境宣传类</option>
+                        <option value="环境监察类">环境监察类</option>
+                        <option value="环境信息类">环境信息类</option>
+                        <option value="环保产业协会">环保产业协会</option>
+                        <option value="规划计划类">规划计划类</option>
+                        <option value="城考创模类">城考创模类</option>
+                        <option value="环保资金类">环保资金类</option>
+                        <option value="科技标准类">科技标准类</option>
+                        <option value="生态保护类">生态保护类</option>
+                        <option value="污染控制类">污染控制类</option>
+                        <option value="进出口类">进出口类</option>
+                    </select>
+                    <span class="star">*</span>
+                </p>
+                 <!--咨询内容输入 部分-->
+                <div class="fc-msg-content"><span>咨询内容：</span>
+                    <textarea class="f-content-val" name="helpContent" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="fc-conceal">
+                    <input type="radio" name="open" id="public" value="open" checked="checked"><label for="public">公开</label>
+                    <input type="radio" name="open" id="hide" value="hide"><label for="hide">隐藏</label>
+                    <span>(隐藏的发帖信息将不会被公开显示)</span>
+                </div>
+                <div class="fc-person-info">
+                    <p><span>个人信息</span>（备注：信息仅供回复联系，不对外公开，请您务必填写电子邮箱地址，非公开信息将直接回复到您邮箱）</p>
+                    <ul>
+                        <li><span>姓名：</span><input type="text" name="name" maxlength="10"></li>
+                        <li><span>电话：</span><input type="text" name="telephone" maxlength="100px"></li>
+                        <li><span>邮箱：</span><input type="text" name="email" id="Email"></li>
+                    </ul>
+                </div>
+                <p class="fc-submit"><input id="submit" type="submit" value=""></p>
+            </form>
+             <!--表单  结束-->
+             <!--其它联系方式 开始-->
+             <div class="m-link-way">
+                 <div class="l-w-title">
+                     <img src="img/t_lp.jpg" alt="telephone">
+                 </div>
+                 <p><span>信件地址：广州市龙口西路213号广东省环保厅信访办</span><span>热线电话：020-87539994</span><span>传真：020-87539994</span></p>
+             </div>
+             <!--其它联系方式 结束-->
+        </div>
+    </div>
+    <!--网页底部  开始-->
+     <div class="main footer">
+         <div class="f-flash-logo">
+             <span>开发维护：</span>
+             <embed src="img/logo.swf" quality="high" pluginspage="" type="application/x-shockwave-flash" width="187" height="22">
+         </div>
+         <div class="f-copyright">
+             广东省环境保护厅 版权所有 未经书面授权禁止复制或建立镜像
+         </div>
+         <div>
+            <p class="f-bottom">
+                <a href="#">关于本站</a>
+                <a href="#">设为主页</a>
+                <a href="#">收藏本站</a>
+                <a href="#">管理员信箱</a>
+            </p>
+         </div>
+     </div>
+    <!--广告部分 开始-->
+    <div class="g-advert" id="AdBox">
+        <div class="m-advert a-left">
+            <a href="#"><img src="" alt="" title=""></a>
+            <i class="AdClose"><em>x</em></i>
+        </div>
+        <div class="m-advert a-right">
+            <a href=""><img src="" alt="" title=""></a>
+            <i class="AdClose"><em>x</em></i>
+        </div>
+    </div>
+
+</body>
+</html>

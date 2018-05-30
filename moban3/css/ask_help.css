@@ -1,0 +1,341 @@
+/*咨询平台样式*/
+/*2018-03-16*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url("../img/bg.jpg") repeat-x;
+    font-size: 12px;
+    font-family: arial,sans-serif;
+}
+a, a:link {
+    text-decoration: none;
+    color: #333333;
+}
+.main {
+    width: 960px;
+    margin:  0 auto;
+}
+.header {
+    position: relative;
+    height: 146px;
+    background: url("../img/top.jpg") no-repeat;
+}
+.header .h-search {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.header .h-search input{
+    width: 190px;
+    height: 22px;
+    background-color: #CFEAE4;
+    border: 1px solid #A2D1AA;
+    padding-left: 4px;
+}
+.header .h-search i {
+    display: inline-block;
+    width: 43px;
+    height: 21px;
+    background: url("../img/search.gif");
+    vertical-align: middle;
+}
+.header .h-search i:hover {
+    cursor: pointer;
+}
+.g-content {
+    background-color: #ffffff;
+}
+.m-nav {
+    position: relative;
+    width: 954px;
+    height: 32px;
+    background: url("../img/t_bg.jpg") repeat-x;
+    box-sizing: content-box;
+}
+.m-nav p {
+    display: inline-block;
+    height: 32px;
+    padding-left: 10px;
+    line-height: 32px;
+}
+.m-nav p a:hover {
+    color: #FF7300;
+    border-bottom: 1px solid #FF7300;
+}
+.m-nav:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 32px;
+    background: url("../img/t_l.jpg") no-repeat;
+}
+.m-nav:after {
+    position: absolute;
+    right: -8px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 32px;
+    background: url("../img/t_r.jpg") no-repeat;
+}
+
+.m-title {
+    width: 100%;
+    height: 62px;
+    background: url("../img/title_bar.jpg") no-repeat;
+    text-align: center;
+    line-height: 62px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1B6C1F;
+    margin: 0 5px;
+}
+.m-call {
+    width: 100%;
+    height: 20px;
+    text-align: right;
+    padding-right: 90px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.m-call span {
+    display: inline-block;
+    height: 20px;
+}
+.m-call span:before {
+    display: inline-block;
+    content : "";
+    width: 22px;
+    height: 20px;
+    background: url("../img/tel.gif") no-repeat ;
+    vertical-align: middle;
+}
+.m-form-box {
+     width:  850px;
+     height: 885px;
+     margin: 0 auto;
+}
+
+.m-form-box .tips {
+    height: 130px;
+    margin: 25px 0 10px 0;
+    background-color: #F1F9F4;
+    border: 1px solid #B7DCBE;
+    border-radius: 3px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.m-form-box .tips-title {
+     margin-bottom: 5px;
+     font-weight: bold;
+ }
+
+.m-form-box .tips p {
+    height: 22px;
+    line-height: 22px;
+}
+.m-form-box .tips p a {
+    font-weight: bold;
+   color: #009966;
+}
+.m-form-box .tips p a:hover {
+    cursor: pointer;
+}
+.form-content {
+    width: 100%;
+    height: 613px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #B7DCBE;
+    border-bottom: 3px solid #B7DCBE;
+    background-color: #F1F9F4;
+    box-sizing: border-box;
+}
+.form-content p {
+    height: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.form-content p span.star {
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #E14000;
+}
+.form-content p span {
+    display: inline-block;
+    width: 90px;
+}
+.form-content input,.form-content select {
+    border: 1px solid #B7DCBE;
+    height: 20px;
+    padding-left: 5px;
+}
+.form-content .fc-subject input {
+     display: inline-block;
+     width: 60%;
+}
+.form-content .fc-helpType select{
+    height: 22px;
+    padding: 0px;
+    margin-left: -3px;
+}
+.form-content .fc-msg-content {
+    padding: 2px;
+}
+.form-content .fc-msg-content span {
+    width: 90px;
+    float: left;
+}
+.form-content .fc-msg-content textarea{
+    width: 717px;
+    height: 306px;
+    margin: 2px 0 0 0;
+    border: 1px solid #B7DCBE;
+}
+.form-content .fc-conceal {
+    padding: 2px 0 0 90px;
+}
+.form-content .fc-conceal input {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-content .fc-conceal label {
+    margin: 0 5px 0 2px;
+}
+.form-content .fc-conceal span{
+    width: 600px;
+    color: #E14000;
+    padding-left: 10px;
+}
+.form-content .fc-person-info {
+    height: 63px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #E5F0EA;
+    box-sizing: border-box;
+
+}
+.form-content .fc-person-info{
+    font-weight: bold;
+    color: black;
+}
+.form-content .fc-person-info p {
+    height: 23px;
+    color: #E14000;
+}
+.form-content .fc-person-info p span {
+    width: 65px;
+    color: black;
+}
+.form-content ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+}
+.form-content p.fc-submit {
+    text-align: center;
+    height: 61px;
+}
+.form-content p.fc-submit input {
+   width: 118px;
+    height: 61px;
+    background: url("../img/btn.jpg") no-repeat;
+    border: none;
+}
+.form-content p.fc-submit input:hover {
+    cursor: pointer;
+}
+.m-link-way {
+    width: 100%;
+    height: 69px;
+    margin: 20px 0 38px 0;
+}
+.m-link-way  .l-w-title {
+    display: block;
+    width: 100%;
+    height: 34px;
+    background: url("../img/tA_bg.jpg") repeat-x;
+}
+.m-link-way p {
+    display: block;
+    margin: 15px;
+    padding-left: 30px;
+    font-weight: bold;
+    color: #006E0C;
+}
+.m-link-way p span {
+    margin-right: 25px;
+}
+.footer {
+    background-color: rgb(243, 243, 243);
+    border-top: 1px solid #e3e3e3;
+    text-align: center;
+}
+.footer .f-flash-logo {
+    height: 28px;
+    line-height: 32px;
+    padding: 4px;
+}
+.footer .f-copyright {
+    height: 22px;
+    line-height: 22px;
+}
+.footer .f-bottom {
+    height: 22px;
+}
+.footer .f-bottom a {
+    border-right: 1px solid #0f0f0f;
+    padding: 0  5px;
+}
+.footer .f-bottom a:first-child {
+    border-left: 1px solid #f0f0f0;
+}
+
+/**********广告的样式*********/
+.g-advert.hidden{
+    display: none;
+}
+
+.m-advert {
+    display: block;
+    position: fixed;
+    top: 146px;
+    width: 150px;
+    height:300px;
+    border: 1px solid #e5e5e5;
+}
+.m-advert a img {
+    width: 100%;
+    height: 100%
+}
+.m-advert.a-right {
+    left: 50%;
+    margin-left: 480px;
+}
+.m-advert.a-left {
+    right: 50%;
+    margin-right: 480px;
+}
+.m-advert i {
+    position: absolute;
+    display: inline-block;
+    bottom: -18px;
+    right:  0px;
+    height: 18px;
+    width: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    z-index: 99999;
+    color: #ffffff;
+    background-color: rgba(52, 52, 52, .5);
+}
+.m-advert i:hover {
+    cursor: pointer;
+}
